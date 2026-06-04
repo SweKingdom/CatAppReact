@@ -1,0 +1,72 @@
+:root {
+  --color-primary: #ff6600;
+}
+
+body {
+  margin: 0;
+  background-color: #f1f5f9;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Orange primary button */
+.btn-catstore {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn-catstore:hover,
+.btn-catstore:focus,
+.btn-catstore:active {
+  background-color: #e55c00;
+  border-color: #e55c00;
+  color: #fff;
+}
+
+/* "Added to cart" button state */
+.btn-added {
+  background-color: #198754;
+  border-color: #198754;
+  color: #fff;
+  cursor: default;
+}
+
+/* Hero */
+.hero-section {
+  background-color: #111;
+  padding: 90px 0;
+}
+
+/* Navbar brand override */
+.navbar-brand {
+  color: var(--color-primary) !important;
+}
+
+/* Active nav link */
+.nav-link.active {
+  color: var(--color-primary) !important;
+  font-weight: 600;
+}
+
+/* Pagination */
+.page-item.active .page-link {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.page-link {
+  color: var(--color-primary);
+}
+
+.page-link:hover {
+  color: #e55c00;
+}
