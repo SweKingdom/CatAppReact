@@ -1,5 +1,6 @@
-import NavbarComp from './components/navbar'
-import { Routes } from 'react-router-dom'
+import NavbarComp from './components/navbar';
+import { Routes } from 'react-router-dom';
+import About from './pages/About';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <NavbarComp />
       <main>
         <Routes>
+          <Route path="/about" element={<About />} />
 
         </Routes>
       </main>
