@@ -12,7 +12,7 @@ export default function CartProvider({ children }) {
                     item.id === cat.id ? {...item, quantity: item.quantity +1} : item
                 );
             }
-            return [...prev, {cat, quantity: 1}];
+            return [...prev, {...cat, quantity: 1}];
         });
     };
 
