@@ -14,16 +14,16 @@ function NavbarComp() {
                 <Navbar.Toggle aria-controls="main-nav" />
                 <Navbar.Collapse id="main-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link as={NavLink} to="/" end>Home</Nav.Link>
-                        <Nav.Link as={NavLink} to="/cats" end>Cats</Nav.Link>
-                        <Nav.Link as={NavLink} to="/cart" end>
+                        <Nav.Link key="home" as={NavLink} to="/" end>Home</Nav.Link>
+                        <Nav.Link key="cats" as={NavLink} to="/cats" end>Cats</Nav.Link>
+                        <Nav.Link key="cart" as={NavLink} to="/cart" end>
                             <CartFill className="me-1" />
                             Cart{' '}
                             {totalItems > 0 && (
                                 <Badge bg="warning" text="dark" pill>{totalItems}</Badge>
                             )}
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/about">About</Nav.Link>
+                        <Nav.Link key="about" as={NavLink} to="/about">About</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
