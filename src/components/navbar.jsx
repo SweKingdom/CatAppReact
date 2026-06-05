@@ -1,5 +1,4 @@
 import { Container, NavLink, Nav, Navbar, Badge } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
 import { CartFill } from "react-bootstrap-icons";
 import useCart from '../context/UseCart';
 
