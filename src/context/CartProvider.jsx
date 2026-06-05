@@ -4,7 +4,7 @@ import CartContext from "./CartContext";
 export default function CartProvider({ children }) {
     const [cartItems, setCartItems] = useState([])
 
-    const addToCart = () => {
+    const addToCart = (cat) => {
         setCartItems(prev => {
             const existing = prev.find(item => item.id === cat.id);
             if (existing) {
